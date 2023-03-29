@@ -5,6 +5,10 @@ body {
     font-style: normal;
     font-weight: 500;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .menu {
     font-size: 24px;
@@ -41,7 +45,7 @@ a {
     
 }
 
-/* Banner  */
+                /* Banner  */
 #bannerHome {
     display: flex;
     justify-content: center;
@@ -64,7 +68,7 @@ a {
     align-items: center;
     flex-direction: column;
     mix-blend-mode: darken;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     
 }
 .imgBanner {
@@ -81,4 +85,31 @@ a {
     position: relative;
     color: white;
     font-size: 48px;
+}
+
+/* 404 */
+
+.Divs404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
+}
+
+.p404{
+    font-size: 288px;
+    position: absolute;
+    font-weight: 700;
+    top: 227px;
+
+}
+.pOups{
+    position: absolute;
+    font-size: 36px;
+    top: 60%;
+}
+
+.pAccueil {
+    padding-top: 680px;
 }
