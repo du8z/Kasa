@@ -1,4 +1,4 @@
-.svg{
+svg{
     background-image: url(./assets/Logo.svg) ;
     background-repeat: no-repeat;
     height: 100%;
@@ -7,8 +7,13 @@
 
 .menu {
     font-size: 24px;
+    
 }
 
 ul {
     list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
 }

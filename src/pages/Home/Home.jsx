@@ -5,10 +5,10 @@ export default function Home() {
    useEffect( ()=> {
     fetch("http://localhost:3000/blogs")
     .then( (response) => {
-        return response.json();
+        return response.json()
     })
     .then ( (data) => {
-        console.log(data);
+        console.log(data)
     })
    })
    

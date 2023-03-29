@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export default function Menu() {
     return (
         <div className="menu">
@@ -12,8 +14,8 @@ export default function Menu() {
             </div>
             <div className="navList">
             <ul>
-                <li>Accueil</li>
-                <li>A propos</li>
+                <li><NavLink to='/' className={({isActive}) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
+                <li><NavLink to='/aPropos' className={({isActive}) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
             </ul>
             </div>
  

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
 body {
-    margin: 0 100px;
+    /* margin: 0 100px; */
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -11,6 +10,8 @@ body {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
+    margin: 0 100px;
+
 
 }
 
@@ -29,4 +30,55 @@ body {
 .menu li:first-child {
     margin-right: 57px;
 
+}
+a {
+    text-decoration: none;
+    color: #FF6060;
+}
+.activeLink{
+    text-decoration-line: underline;
+    color: #FF6060;
+    
+}
+
+/* Banner  */
+#bannerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 223px;
+    margin-top: 68px;
+    border-radius: 25px;
+    
+
+
+}
+
+.divImgBanner{
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    
+}
+.imgBanner {
+    width: 100% ;
+    height: 223px;
+    border-radius: 25px;
+    position: absolute;
+    object-fit: cover;
+    background-color: black;
+    margin: 0 100px;
+
+}
+.pBanner {
+    position: relative;
+    color: white;
+    font-size: 48px;
 }
