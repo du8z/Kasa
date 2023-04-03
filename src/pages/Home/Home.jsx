@@ -1,26 +1,13 @@
-import { useState, useEffect } from "react"
-
+import { useState, useEffect } from "react";
+import MainLayout from "../../layout/MainLayout";
+import imageHome from "../../assets/imgBannerHome.png";
+import Banner from "../../components/Banner/Banner";
 export default function Home() {
-   
-   useEffect( ()=> {
-    fetch("http://localhost:3000/blogs")
-    .then( (response) => {
-        return response.json()
-    })
-    .then ( (data) => {
-        console.log(data)
-    })
-   })
-   
-   
-   
-   
-   
-   
-   
-    return (
-        <div>
+      const imgHome = [imageHome, "Chez vous, partout et ailleurs"];
 
-        </div>
-    )
+      return (
+            <div>
+                  <Banner img={imgHome} />
+            </div>
+      );
 }
