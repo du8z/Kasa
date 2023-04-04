@@ -1,0 +1,55 @@
+.cardsSection {
+    height: auto;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    padding: 56px 50px;
+    margin:  100px ;
+    display: flex;
+    align-items: center;
+    /* justify-content: start; */
+ 
+    flex-wrap: wrap;
+}
+.card {
+    margin: 30px 40px;
+    height: 450px;
+    width: 450px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    
+
+}
+.imageCard{
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    border-radius: 25px;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+
+}
+.titleCard{
+    z-index: 10;
+    width: 230px;
+    margin-top: -60px;
+    margin-left: 15px;
+    color: white;
+}
+/* .card img{
+    border-radius: 25px;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    background-color: black;
+} */
+
+/* #imageCard {
+    background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url('https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg');
+    border-radius: 25px;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    background-color: black;
+} */

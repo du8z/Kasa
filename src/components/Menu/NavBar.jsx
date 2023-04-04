@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom"
 import './Menu.css'
 import fetchData from '../../data/data'
 
-console.log(fetchData)
 export default function Menu() {
     return (
         <div className="menu">

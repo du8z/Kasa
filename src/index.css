@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Shrikhand&display=swap');
 body {
-    /* margin: 0 100px; */
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,32 +11,6 @@ body {
 
 
 
-                /* Banner  */
 
 
-/* 404 */
 
-.Divs404{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #FF6060;
-}
-
-.p404{
-    font-size: 288px;
-    position: absolute;
-    font-weight: 700;
-    top: 227px;
-
-}
-.pOups{
-    position: absolute;
-    font-size: 36px;
-    top: 60%;
-}
-
-.pAccueil {
-    padding-top: 680px;
-}

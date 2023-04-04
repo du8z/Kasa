@@ -1,0 +1,26 @@
+/* 404 */
+
+.Divs404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
+}
+
+.p404{
+    font-size: 288px;
+    position: absolute;
+    font-weight: 700;
+    top: 227px;
+
+}
+.pOups{
+    position: absolute;
+    font-size: 36px;
+    top: 60%;
+}
+
+.pAccueil {
+    padding-top: 680px;
+}

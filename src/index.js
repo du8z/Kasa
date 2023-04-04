@@ -6,7 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Propos from './pages/A_propos/A_propos'
 import Error from './pages/404/404'
-
+import Logement from './pages/Fiche_Logement/FicheLogement';
 
 
 const router = createBrowserRouter([
@@ -24,9 +24,13 @@ const router = createBrowserRouter([
     element: <Error/>,
 
   },
+  {
+    path: '/user/:uid',
+    element: <Logement/>,
+
+  },
 ])
 
-{/* <Route path='/aPropos' element={ <><Banner img={imgAbout}/></>}/> */}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

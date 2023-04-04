@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import './404.css'
 export default function Error () {
     return (
 

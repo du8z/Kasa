@@ -1,4 +1,5 @@
 import './Banner.css'
+
 export default function Banner (props) {
     const Url = props.img[0]
     if (props.img[1] !== undefined) {
