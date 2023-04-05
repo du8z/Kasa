@@ -1,0 +1,9 @@
+.Stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.Star {
+    margin-left: 15px;
+}

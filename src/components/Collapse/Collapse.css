@@ -51,3 +51,9 @@
 .titleCollapse {
     margin: 20px;
 }
+/* #descriptionCollapse{
+    width: 100%;
+} */
+#descriptionsCollapse :first-child{
+    list-style: none;
+}

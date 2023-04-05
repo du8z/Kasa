@@ -1,0 +1,41 @@
+.ContentUser{
+display: flex;
+justify-content: space-between;
+}
+.TitleLocation{
+    color: #FF6060;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.TitleLocation :first-child{
+    font-size: 36px;
+    line-height: 140%;
+}
+.TitleLocation :last-child{
+    font-size: 18px;
+    line-height: 140%;
+}
+.NameInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 130px;
+    margin-top: 50px;
+}
+.NameInformation :first-child{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.NameInformation p {
+    font-size: 18px ;
+    color: #FF6060;
+    margin-right: 15px;
+}
+.imgInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}

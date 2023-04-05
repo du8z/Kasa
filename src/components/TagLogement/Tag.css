@@ -1,0 +1,24 @@
+.tag {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 5px;
+}
+.tag p {
+
+font-size: 14px;
+padding: 5px 22px;
+}
+.tag :first-child {
+    background-color: red;
+    border-radius: 25px;
+    margin-left: 10px;
+
+}
+.contentTag{
+    display: flex;
+    justify-content: start;
+    margin: 50px 0 50px 80px;
+}
