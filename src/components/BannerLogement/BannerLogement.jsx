@@ -9,10 +9,10 @@ export default function BannerLogement () {
 
     
     let {uid} = useParams()
-    const user = Datas.filter(element => element.id === uid )
-    console.log(user[0].pictures);
-    const pictures = user[0].pictures
-    const test = user[0].pictures[2]
+    const logement = Datas.filter(element => element.id === uid )
+    console.log(logement[0].pictures);
+    const pictures = logement[0].pictures
+    const test = logement[0].pictures[2]
     const index = pictures.findIndex(picture => picture === test)
     console.log(pictures);
     console.log(pictures.length);
@@ -30,10 +30,3 @@ export default function BannerLogement () {
 }
 
 
-
-// {user[0].pictures.map(picture => (
-//     <div>
-//     <img className='imageCard' src={picture} alt={picture} />
-//     {/* <p>`${currentIndex + 1}/${pictures.length}`</p> */}
-//     </div>
-// ))}

@@ -4,33 +4,29 @@ import Footer from '../../layout/Footer/Footer'
 import { useParams } from 'react-router-dom'
 import Datas from '../../data/data'
 import Tag from '../../components/TagLogement/Tag'
-// import Banner from '../../components/Banner/Banner'
-import BannerLogement from '../../components/BannerLogement/BannerLogement'
 import InformationUser from '../../components/infomationUser/InformationUser'
 import Stars from '../../components/Stars/Stars'
-import Collapse, { CollapseLocation } from '../../components/Collapse/Collapse'
+import Collapse from '../../components/Collapse/Collapse'
+import Carousel from '../../components/Carousel/Carousel'
 
 
 
 export default function Logement () {
     let {uid} = useParams()
-    const user = Datas.filter(element => element.id === uid )
-    console.log(user[0].tags)
-
+    const logement = Datas.filter(element => element.id === uid )
     
     return (
         <MainLayout>
-
-        {/* <BannerLogement/> */}
-        <InformationUser user={user}/>
+        <Carousel logement={logement}/>
+        <InformationUser logement={logement}/>
         <div className='positionTagAndStars'>
-            <Tag user={user}/>
-            <Stars user={user}/>
+            <Tag logement={logement}/>
+            <Stars logement={logement}/>
         </div>
         <div className='CollapsePosition'>
-            <Collapse titre = {'Description'} description={user[0].description} />
-            {/* <Collapse titre = {'Equipement'} description={user[0].equipments}/> */}
-            <CollapseLocation titre = {'Equipement'} descriptions={user[0].equipments}/>
+            <Collapse id="Test" titre = {'Description'} description={logement[0].description} />
+            {/* <Collapse titre = {'Equipement'} description={logement[0].equipments}/> */}
+            <Collapse titre = {'Equipement'}  ul={logement[0].equipments} />
         </div>
 
         <Footer/>

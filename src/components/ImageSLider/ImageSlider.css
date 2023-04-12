@@ -1,0 +1,22 @@
+.Right {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    margin-right: 23px ;
+    cursor: pointer;
+
+}
+.Left {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-left: 23px ;
+    cursor: pointer;
+}
+.indexSlide {
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    right: 50%;
+    margin-top: -45px;
+}

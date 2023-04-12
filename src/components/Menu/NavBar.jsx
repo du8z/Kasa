@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 import './Menu.css'
-import fetchData from '../../data/data'
 
 export default function Menu() {
     return (

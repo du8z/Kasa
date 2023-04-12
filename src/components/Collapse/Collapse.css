@@ -12,7 +12,7 @@
 }
 .descriptionCollapse {
     margin-top: -5px;
-    padding: 30px 20px 10px 20px;
+    padding: 30px 20px 40px 20px;
     max-width: 100%;
     z-index: 1;
     font-size: 24px;
@@ -22,7 +22,6 @@
     margin: 15px 100px;
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 60%;
 }
@@ -56,4 +55,17 @@
 } */
 #descriptionsCollapse :first-child{
     list-style: none;
+}
+#equipmentsCollapse {
+    max-width: 100%;
+
+}
+
+#ulEquipments {
+    list-style: none;
+    padding: 10px 550px 0px 10px;
+}
+.heightCollapseLogement{
+    height: 52px;
+    border-radius: 10px;
 }

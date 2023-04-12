@@ -1,20 +1,20 @@
 import './InformationUser.css'
 
-export default function InformationUser ({user}) {
+export default function InformationUser ({logement}) {
 
 
     return (
         <div className='ContentUser'>
             <div>
                 <div className='TitleLocation'>
-                    <p>{user[0].title}</p>
-                    <p>{user[0].location}</p>
+                    <p>{logement[0].title}</p>
+                    <p>{logement[0].location}</p>
                 </div>
             </div>
             <div className='NameInformation'>
             <div className='imgInformation'>
-                <img src={user[0].host.picture} alt="" />
-                <p>{user[0].host.name}</p>
+                <img src={logement[0].host.picture} alt="" />
+                <p>{logement[0].host.name}</p>
             </div>
             </div>
         </div>
