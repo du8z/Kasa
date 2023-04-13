@@ -7,19 +7,32 @@ export default function Carousel ({logement}) {
     const pictures = logement[0].pictures
     const slides = pictures
  
-    
-
-
-    return (
+    if (pictures.length < 2) {
+        return (
         <div id='Carousel'>
-            <div className='ContainerCarousel'>
-                <div className='imgCarousel'>
-                <ImageSlider slides={slides} />
-                </div>
-
+        <div className='ContainerCarousel'>
+            <div className='imgCarousel'>
+            <img src={pictures[0]} alt="" srcset="" />
             </div>
+
         </div>
+    </div>
     )
+    } else {
+        return (
+            <div id='Carousel'>
+                <div className='ContainerCarousel'>
+                    <div className='imgCarousel'>
+                    <ImageSlider slides={slides} />
+                    </div>
+    
+                </div>
+            </div>
+        )
+    }
+
+
+
 }
 
 
