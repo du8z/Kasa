@@ -4,29 +4,51 @@
     border-radius: 25px;
     padding: 56px 50px;
     margin:  100px ;
-    display: flex;
-    align-items: center;
-    /* justify-content: start; */
  
-    flex-wrap: wrap;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    grid-template-rows: repeat(5, 1fr); 
 }
+.cards {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+} 
 .card {
     margin: 30px 40px;
     height: 450px;
     width: 450px;
     border-radius: 25px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    
+    /* background: url(../../assets/imgBannerHome.png); */
+    position: relative;
 
 }
 .imageCard{
-    background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
     border-radius: 25px;
-    height: 450px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.card::after {
+    content: ' ';
+    height: 100%;
+    border-radius: 25px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
+}
+.image {
+    height: 100%;
+    width: 100%;
 }
 .titleCard{
     z-index: 10;
@@ -34,22 +56,38 @@
     margin-top: -60px;
     margin-left: 15px;
     color: white;
+    position: relative;
 }
-/* .card img{
-    border-radius: 25px;
-    height: 450px;
-    width: 450px;
-    object-fit: cover;
-    background-color: black;
-} */
 
-/* #imageCard {
-    background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url('https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg');
-    border-radius: 25px;
-    height: 450px;
-    width: 450px;
-    object-fit: cover;
-    background-color: black;
-} */
+@media screen and (max-width: 1750px ) {
+    .cards {
+
+     
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+@media screen and (max-width: 1200px ) {
+    .cards {
+
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cardsSection {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .card {
+        height: 255px;
+        width: 335px;
+        margin: 20px 17px;
+
+    }
+    .imageCard {
+        height: 255px;
+        width: 335px;
+    }
+
+}

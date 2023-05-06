@@ -39,3 +39,32 @@ justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 800px) {
+
+.TitleLocation{
+    margin: 115px 0 0 20px;
+}
+.TitleLocation :first-child{
+    font-size: 18px;
+}
+.TitleLocation :last-child{
+    font-size: 14px;
+}
+.NameInformation {
+    margin-right: 60px;
+    position: relative;
+    padding-left: 135px;
+    margin-top: 265px;
+}
+.ContentUser {
+    position: absolute;
+}
+.NameInformation :first-child{
+    width: 32px;
+    height: 32px;
+}
+.NameInformation p {
+    font-size: 12px ;
+}
+}

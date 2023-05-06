@@ -2,6 +2,7 @@
     font-size: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 100px;
 
 
@@ -31,4 +32,32 @@ a {
     text-decoration-line: underline;
     color: #FF6060;
     
+}
+.svgLogo {
+    background-image: url('../../svg/LogoBig.svg');
+    width: 211px;
+    height: 68px; 
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .svgLogo {
+        background-image: url('../../svg/LogoSmall.svg');
+        width: 145px;
+        height: 47px; 
+        margin-top: 20px;
+    }
+    .menu{
+        margin: 0 20px;
+        align-items: center;
+    }
+    .menu ul {
+        margin-top: 25px;
+        font-size: 12px;
+    }
+    .menu li:first-child {
+        margin-right: 10px;
+    
+    }
 }

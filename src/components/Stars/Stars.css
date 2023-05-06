@@ -6,4 +6,20 @@
 }
 .Star {
     margin-left: 15px;
+    height: 24px;
+    width: auto;
 }
+@media screen and (max-width: 800px) {
+
+    .Stars {
+        margin-top: 27px;
+        margin-left: 10px;
+    }
+    .Star {
+    height: 13px;
+    margin-left: 7px;
+
+    }
+
+}
+

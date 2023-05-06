@@ -7,6 +7,11 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function Card (){
+
+
+
+
+
     let navigate = useNavigate()
 
     const logement = (logementId) => {
@@ -14,13 +19,16 @@ export default function Card (){
     }
     return (
         <div className='cardsSection'>
-            
+            <div className='cards'>
              {Datas.map(data => (
-            <div className='card' >
-            <img className='imageCard' src={data.cover} alt={data.cover} onClick={() => logement(data.id)}/>
+            
+            <div className='card' onClick={() => logement(data.id)}>
+            <img  className='imageCard' src={data.cover} alt={data.cover} />
+
             <p className='titleCard'>{data.title}</p>
             </div>
             ))}
+            </div>
 
         </div>
     )

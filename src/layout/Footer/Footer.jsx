@@ -4,7 +4,7 @@ export default function Footer() {
       return (
             <div className="footer">
                   <div className="logoFooter">
-                        <svg
+                        <svg 
                               width="122"
                               height="40"
                               viewBox="0 0 122 40"
@@ -34,9 +34,7 @@ export default function Footer() {
                         </svg>
                   </div>
                   <div>
-                        <svg
-                              width="380"
-                              height="24"
+                        <svg className="svgFooterRights"
                               viewBox="0 0 380 24"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"

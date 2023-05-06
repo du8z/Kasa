@@ -50,9 +50,7 @@
 .titleCollapse {
     margin: 20px;
 }
-/* #descriptionCollapse{
-    width: 100%;
-} */
+
 #descriptionsCollapse :first-child{
     list-style: none;
 }
@@ -69,3 +67,30 @@
     height: 52px;
     border-radius: 10px;
 }
+.svgCollapse{
+    height: 14px;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+
+    .boxCollapse {
+        width: 90%;
+        margin-top: 20px ;
+    }
+ 
+    .Collapse {
+        font-size: 13px;
+    }
+    .descriptionCollapse {
+        font-size: 12px;
+    }
+    #ulEquipments {
+        padding: 10px 240px 0px 0px ;
+    }
+    .svgCollapse{
+        height: 10px;
+        width: auto;
+    }
+}
+

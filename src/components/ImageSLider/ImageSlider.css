@@ -4,6 +4,8 @@
     top: 40%;
     margin-right: 23px ;
     cursor: pointer;
+    width: auto;
+    height: 80px;
 
 }
 .Left {
@@ -12,6 +14,8 @@
     top: 40%;
     margin-left: 23px ;
     cursor: pointer;
+    width: auto;
+    height: 80px;
 }
 .indexSlide {
     font-size: 18px;
@@ -20,3 +24,19 @@
     right: 50%;
     margin-top: -45px;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .Right {
+        height: 20px;
+        width: auto;
+        margin-right: 6px;
+    }
+    .Left {
+        height: 20px;
+        margin-left: 6px;
+        width: auto;
+    }
+}
+
