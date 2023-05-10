@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import Propos from './pages/A_propos/A_propos'
 import Error from './pages/404/404'
 import Logement from './pages/Fiche_Logement/FicheLogement';
-import ScrollToTop from './utils/style/ScrollTop/ScrollTop';
 
 
 const router = createBrowserRouter([

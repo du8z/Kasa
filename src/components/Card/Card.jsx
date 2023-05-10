@@ -22,7 +22,7 @@ export default function Card (){
             <div className='cards'>
              {Datas.map(data => (
             
-            <div className='card' onClick={() => logement(data.id)}>
+            <div key={data.id} className='card' onClick={() => logement(data.id)}>
             <img  className='imageCard' src={data.cover} alt={data.cover} />
 
             <p className='titleCard'>{data.title}</p>
