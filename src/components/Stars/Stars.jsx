@@ -17,7 +17,7 @@ export default function Stars ({logement}) {
         {logement.map((logement) => {
           return (
    
-                <div className="container4">
+                <div key={logement} className="container4">
                   <p>
                     {fullStars.slice(5-logement.rating).map(fullStars => {
                       return <span>{fullStars}</span>
