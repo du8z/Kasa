@@ -25,7 +25,6 @@ export default function Logement () {
         </div>
         <div className='CollapsePosition'>
             <Collapse id="Test" titre = {'Description'} description={logement[0].description} />
-            {/* <Collapse titre = {'Equipement'} description={logement[0].equipments}/> */}
             <Collapse titre = {'Equipement'}  ul={logement[0].equipments} />
         </div>
 
